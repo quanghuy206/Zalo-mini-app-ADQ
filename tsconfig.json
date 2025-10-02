@@ -3,6 +3,16 @@
     "noEmit": true,
     "target": "es6",
     "module": "esnext",
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["./@/*"],
+      "assets/*": ["./src/assets/*"],
+      "components/*": ["./src/components/*"],
+      "pages/*": ["./src/pages/*"],
+      "css/*": ["./src/css/*"],
+      "tests/*": ["./src/tests/*"]
+    },
+    
     "noImplicitAny": false,
     "preserveConstEnums": true,
     "jsx": "react-jsx",
@@ -33,5 +43,5 @@
     }
   },
   "exclude": ["node_modules"],
-  "include": ["src"]
+  "include": ["src", "src/app.tsx"]
 }
